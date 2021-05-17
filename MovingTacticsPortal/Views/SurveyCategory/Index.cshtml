@@ -1,0 +1,28 @@
+﻿@model IEnumerable<MovingTactics.Portal.Models.SurveyModule.SurveyCategory>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Survey Categories</h2>
+<br/>
+<p>
+    <a href="@Url.Action("Create","SurveyCategory")" class="btn btn-outline-primary">Add Category</a>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CategoryTitle)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CategoryTitle)
+        </td>
+    </tr>
+}
+
+</table>

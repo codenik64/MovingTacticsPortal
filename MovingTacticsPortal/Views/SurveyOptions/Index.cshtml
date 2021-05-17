@@ -1,0 +1,46 @@
+﻿@model IEnumerable<MovingTactics.Portal.Models.SurveyModule.SurveyOptions>
+
+<h2>Survey Answer Options</h2>
+
+<br />
+<p>
+    <a href="@Url.Action("Create","SurveyOptions")" class="btn btn-outline-primary">Add Answer Option</a>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OptionType)
+        </th>
+
+        @*<th>
+            @Html.DisplayNameFor(model => model.MemberId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SurveyId)
+        </th>*@
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OptionType)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.MemberId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SurveyId)
+            </td>*@
+
+        </tr>
+    }
+
+</table>

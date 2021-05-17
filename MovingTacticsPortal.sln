@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovingTacticsPortal", "MovingTacticsPortal\MovingTacticsPortal.csproj", "{829345AB-513B-46FB-A51A-5F747B2E1FED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovingTactics.Portal.DataAccess", "MovingTactics.Portal.DataAccess\MovingTactics.Portal.DataAccess.csproj", "{97E43EEF-8652-4E5C-B175-7AA60F027236}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovingTactics.Portal.DataAccess.EntityFramework.Identity", "MovingTactics.Portal.DataAccess.EntityFramework\MovingTactics.Portal.DataAccess.EntityFramework.Identity.csproj", "{B475AEB7-4B0D-459D-B87B-49E9C1C48FD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovingTactics.Portal.Business.MasterEngine", "MovingTactics.Portal.Business.MasterEngine\MovingTactics.Portal.Business.MasterEngine.csproj", "{58E00E46-801B-4ED4-8030-A8350C9857D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovingTactics.Portal.Models", "MovingTactics.Portal.Models\MovingTactics.Portal.Models.csproj", "{6CE709C4-16B7-4BCA-B457-2663348CB85A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovingTactics.Portal.Customs.Helpers", "MovingTactics.Portal.Customs.Helpers\MovingTactics.Portal.Customs.Helpers.csproj", "{DCE77755-8B7E-4220-8DAF-DFDA81FB32E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MovingTactics Web Module", "MovingTactics Web Module", "{B1D8E797-D274-4DE3-9010-5A0DFAD4DFE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MovingTactics Intelligence Engine Module", "MovingTactics Intelligence Engine Module", "{1DF0AB86-A704-45BE-BBEC-158E19DC96A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MovingTactics Customs Module", "MovingTactics Customs Module", "{DA8D5608-1A57-4E2E-A2CF-D2AF39E677DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MovingTactics DataStore Module", "MovingTactics DataStore Module", "{04FCE670-FDF4-48E6-BD1B-4C1E994F5DB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovingTactics.Portal.Business.MasterEngine.Interfaces", "MovingTactics.Portal.Business.MasterEngine.Interfaces\MovingTactics.Portal.Business.MasterEngine.Interfaces.csproj", "{BCE5A1D7-DD35-405C-905A-9B18298F06B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{829345AB-513B-46FB-A51A-5F747B2E1FED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{829345AB-513B-46FB-A51A-5F747B2E1FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{829345AB-513B-46FB-A51A-5F747B2E1FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{829345AB-513B-46FB-A51A-5F747B2E1FED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E43EEF-8652-4E5C-B175-7AA60F027236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E43EEF-8652-4E5C-B175-7AA60F027236}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E43EEF-8652-4E5C-B175-7AA60F027236}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E43EEF-8652-4E5C-B175-7AA60F027236}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B475AEB7-4B0D-459D-B87B-49E9C1C48FD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B475AEB7-4B0D-459D-B87B-49E9C1C48FD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B475AEB7-4B0D-459D-B87B-49E9C1C48FD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B475AEB7-4B0D-459D-B87B-49E9C1C48FD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58E00E46-801B-4ED4-8030-A8350C9857D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58E00E46-801B-4ED4-8030-A8350C9857D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58E00E46-801B-4ED4-8030-A8350C9857D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58E00E46-801B-4ED4-8030-A8350C9857D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CE709C4-16B7-4BCA-B457-2663348CB85A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CE709C4-16B7-4BCA-B457-2663348CB85A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CE709C4-16B7-4BCA-B457-2663348CB85A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CE709C4-16B7-4BCA-B457-2663348CB85A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCE77755-8B7E-4220-8DAF-DFDA81FB32E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCE77755-8B7E-4220-8DAF-DFDA81FB32E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCE77755-8B7E-4220-8DAF-DFDA81FB32E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCE77755-8B7E-4220-8DAF-DFDA81FB32E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCE5A1D7-DD35-405C-905A-9B18298F06B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE5A1D7-DD35-405C-905A-9B18298F06B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE5A1D7-DD35-405C-905A-9B18298F06B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE5A1D7-DD35-405C-905A-9B18298F06B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{829345AB-513B-46FB-A51A-5F747B2E1FED} = {B1D8E797-D274-4DE3-9010-5A0DFAD4DFE3}
+		{97E43EEF-8652-4E5C-B175-7AA60F027236} = {04FCE670-FDF4-48E6-BD1B-4C1E994F5DB0}
+		{B475AEB7-4B0D-459D-B87B-49E9C1C48FD8} = {04FCE670-FDF4-48E6-BD1B-4C1E994F5DB0}
+		{58E00E46-801B-4ED4-8030-A8350C9857D1} = {1DF0AB86-A704-45BE-BBEC-158E19DC96A9}
+		{6CE709C4-16B7-4BCA-B457-2663348CB85A} = {1DF0AB86-A704-45BE-BBEC-158E19DC96A9}
+		{DCE77755-8B7E-4220-8DAF-DFDA81FB32E5} = {DA8D5608-1A57-4E2E-A2CF-D2AF39E677DA}
+		{BCE5A1D7-DD35-405C-905A-9B18298F06B6} = {1DF0AB86-A704-45BE-BBEC-158E19DC96A9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34C11A34-3BED-4CE0-BA29-A999A6B07A1E}
+	EndGlobalSection
+EndGlobal

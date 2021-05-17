@@ -1,0 +1,53 @@
+﻿@model IEnumerable<MovingTactics.Portal.Models.ViewModels.ResponseViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Question)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ResponseValue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Survey)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Member)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Question)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ResponseValue)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Survey)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Comment)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Member)
+    </td>
+
+</tr>
+}
+
+</table>

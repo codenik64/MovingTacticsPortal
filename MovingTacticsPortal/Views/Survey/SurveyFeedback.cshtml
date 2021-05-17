@@ -1,0 +1,68 @@
+﻿@model MovingTactics.Portal.Models.SurveyModule.SurveyViewModel
+
+@using (Html.BeginForm("SurveyFeedbackForm", "Survey", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <h2>@Model.Survey.SurveyTitle</h2>
+
+    <input hidden type="text" value="@Model.Survey.SurveyId" id="SurveyId" name="SurveyId" />
+
+    foreach (var item in Model.SurveyQuestions)
+    {
+        <p>@item.QuestionBody</p>
+
+        <br />
+        foreach (var option in Model.SurveyOptions)
+        {
+            <br/>
+            if (option.OptionType == "radio")
+            {
+                <div class="container-fluid">
+                    <div class="form-check">
+                        <label class="form-check-label" for="@item.QuestionId">
+                            <input type="radio" class="form-check-input" id="@item.QuestionId" name="@item.QuestionId" value="@option.Title">@option.Title
+                        </label>
+                    </div>
+                </div>
+            }
+
+            if (option.OptionType == "file")
+            {
+                <div class="container-fluid">
+                    <div class="custom-file mb-1 col-md-6">
+                        <input type="file" class="custom-file-input" id="@item.QuestionId" name="@item.QuestionId" multiple>
+                        <label class="custom-file-label" for="@item.QuestionId">Choose file</label>
+                    </div>
+                </div>
+            }
+
+            if (option.OptionType == "text")
+            {
+                
+                    <div class="col-md-4">
+                        <label for="@item.QuestionId">@option.Title</label>
+                        <textarea class=" form-control" rows="4" id="@item.QuestionId" name="@item.QuestionId"></textarea>
+                    </div>
+  
+            }
+
+        }
+        <br />
+
+    }
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Submit" class="btn btn-outline-primary" />
+        </div>
+    </div>
+}
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $(".custom-file-input").on("change", function () {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+    });
+
+</script>

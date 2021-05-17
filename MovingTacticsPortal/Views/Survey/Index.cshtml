@@ -1,0 +1,40 @@
+﻿@model IEnumerable<MovingTactics.Portal.Models.SurveyModule.Survey>
+
+
+<h2>Surveys</h2>
+<br />
+
+<p>
+    <a href="@Url.Action("Create","Survey")" class="btn btn-outline-primary">Add Survey</a>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SurveyTitle)
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SurveyTitle)
+
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown">
+                       Survey Details
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="@Url.Action("SurveyResponses","Survey", new { id = item.SurveyId})">Manage Responses</a>
+                        <a class="dropdown-item" href="@Url.Action("SurveyFeedback","Survey", new { id = item.SurveyId})">Take Survey</a>
+                    </div>
+                </div>
+             
+            </td>
+        </tr>
+    }
+
+</table>
